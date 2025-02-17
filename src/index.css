@@ -1,0 +1,304 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f4f4; /* Soft pastel background */
+  color: #5a5a5a; /* Darker text for readability */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Card Styles */
+.card {
+  background: #ffebee; /* Light pastel pink */
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%; /* Allow card width to be flexible */
+  max-width: 400px; /* Set a max-width so it doesn’t grow too wide */
+  height: auto; /* Adjust height dynamically based on content */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Counter & Calculator Styles */
+.counter, .calculator {
+  width: 100%; /* Ensure flexibility */
+  max-width: 400px;
+  height: auto;
+}
+
+/* Counter Value */
+.counter-value {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.btn {
+  background: #ff8a80;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff5252;
+}
+
+/* Adjusted Operator Buttons */
+.calculator .btn-group .btn {
+  margin: 5px; /* Added spacing between operator buttons */
+}
+
+/* Reset Button */
+.reset {
+  background: #e57373;
+}
+
+.reset:hover {
+  background: #c62828;
+}
+
+/* Calculator Input */
+.input-group input {
+  width: 100%; /* Make the input field take up the available space */
+  padding: 10px;
+  margin: 5px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffccd5;
+  background: #ffebee;
+  color: #5a5a5a;
+}
+
+.input-group input::placeholder {
+  color: #bdbdbd;
+}
+
+/* Result Styling */
+.result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.result span {
+  color: #ff5252;
+}
+
+/* TODO LIST TABLE */
+.todo-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Todo Table */
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffe0e6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Table Header */
+.todo-table th {
+  background: #ffccd5;
+  padding: 12px;
+  text-align: left;
+  color: #5a5a5a;
+  font-size: 18px;
+}
+
+/* Table Rows */
+.todo-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ffb3c1;
+  color: #5a5a5a;
+  font-size: 16px;
+}
+
+/* Alternating Row Colors */
+.todo-table tbody tr:nth-child(even) {
+  background: #ffebee;
+}
+
+/* Hover Effect */
+.todo-table tbody tr:hover {
+  background: #ffcdd2;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Status Colors */
+.completed {
+  color: #66bb6a;
+  font-weight: bold;
+}
+
+.not-completed {
+  color: #e53935;
+  font-weight: bold;
+}
+
+/* User List Container */
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffebee;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+input {
+  width: 100%;  /* Make the input fields take up full available width */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ffccd5;
+  background: #ffebee;
+  color: #5a5a5a;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #bdbdbd;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add {
+  background: #81c784;
+  color: white;
+}
+
+.add:hover {
+  background: #4caf50;
+}
+
+.update {
+  background: #64b5f6;
+  color: white;
+}
+
+.update:hover {
+  background: #1976d2;
+}
+
+.edit {
+  background: #ffb74d;
+  color: white;
+}
+
+.edit:hover {
+  background: #ff9800;
+}
+
+.delete {
+  background: #e57373;
+  color: white;
+}
+
+.delete:hover {
+  background: #c62828;
+}
+
+/* User List Table */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: #ffe0e6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  color: #5a5a5a;
+}
+
+th {
+  background: #ffccd5;
+  font-size: 18px;
+}
+
+tbody tr:nth-child(even) {
+  background: #ffebee;
+}
+
+tbody tr:hover {
+  background: #ffcdd2;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%; /* Full width on smaller screens */
+    max-width: none;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .todo-table, table {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
