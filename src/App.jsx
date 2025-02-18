@@ -5,7 +5,7 @@ import UserList from "./components/UserList";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [inputs, setInputs] = useState([0, 0]); // Initialize with 2 inputs
+  const [inputs, setInputs] = useState([0, 0]);
   const [result, setResult] = useState(0);
 
   // Counter Functions
@@ -72,10 +72,10 @@ function App() {
         <p className="result">Result: <span>{result}</span></p>
       </div>
 
-      {/* User List */}
+      {/* User List Section */}
       <UserList />
       
-      {/* Todo List */}
+      {/* Todo List Section */}
       <TodoList />
     </div>
   );
