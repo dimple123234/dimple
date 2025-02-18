@@ -75,7 +75,7 @@ function App() {
       {/* User List */}
       <UserList />
       
-      {/* Todo List (moved to the bottom) */}
+      {/* Todo List */}
       <TodoList />
     </div>
   );
